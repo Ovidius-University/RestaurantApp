@@ -7,7 +7,3 @@ CREATE DATABASE dbRestaurantProject; //in ADS
 Install-Package SendGrid //for email verification
 
 dotnet aspnet-codegenerator identity --files Account.Manage.EnableAuthenticator //to scaffold EnableAuthenticator for the QR code
-
-Google Client ID: 297695286637-kslea2j4ta8b3jqhlrg4inrk5m2kuuki.apps.googleusercontent.com
-Google Client Secret: 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
-SendGridKey: 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
