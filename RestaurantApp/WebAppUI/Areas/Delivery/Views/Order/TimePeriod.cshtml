@@ -1,0 +1,105 @@
+﻿@model OrderTimeVm
+
+@{
+    ViewData["Title"] = "TimePeriod";
+}
+
+@if (Model.id == 1)
+{
+    <h1>Website deliveries from the last day you can take up</h1>
+}
+else if (Model.id == 2)
+{
+    <h1>Website deliveries from the last month you can take up</h1>
+}
+else if (Model.id == 3)
+{
+    <h1>Website deliveries from the last year you can take up</h1>
+}
+
+<br />
+@await Html.PartialAsync("_MessageResponse", "MessageDeliveryOrder")
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Order Number
+            </th>
+            <th>
+                Customer Name
+            </th>
+            <th>
+                Cost (without tip)
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Tip
+            </th>
+            <th>
+                Paying Method
+            </th>
+            <th>
+                Order Time
+            </th>
+            <th>
+                Picked Arrival Time
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListOrders!)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cost) RON
+                </td>
+                @if (item.Address != string.Empty && item.Address != null)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                }
+                else if (item.IsDelivery == false)
+                {
+                    <td>
+                        Not a delivery
+                    </td>
+                }
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tip) RON
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PayingMethod)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArrivalTime)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-controller="OrderContent" asp-action="Index" asp-route-oid="@item.Id">Order's items</a> |
+                    <a asp-action="TakeOrder" asp-route-id="@item.Id">Take up delivery</a>
+                    @if (item.WorkerId != 0 && item.WorkerId != null)
+                    {
+                        <div> | <a asp-action="Edit" asp-route-id="@item.Id">Confirm delivery</a></div>
+                    }
+                </td>
+            </tr>
+        }
+        <br />
+    </tbody>
+</table>
+<div>
+    <partial name="_BackToList" />
+</div>

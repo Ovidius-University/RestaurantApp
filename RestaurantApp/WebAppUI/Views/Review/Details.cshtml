@@ -1,0 +1,17 @@
+﻿@model ReviewDetailsVm
+<section class="row">
+    <article class="me-2">
+        <h2>@Html.DisplayFor(m => Model.Reviewer)</h2>
+    </article>
+    <article class="me-2">
+        <dl>
+            <dt>Food: </dt>
+            <a asp-controller="Food" asp-action="Details" asp-route-id="@Model.FoodId">@Html.DisplayFor(m => Model.Food)</a>
+            <dt>Comment: </dt>
+            <dd>@Html.DisplayFor(m => Model.Content)</dd>
+        </dl>
+    </article>
+</section>
+<div>
+    <a asp-action="Index" asp-route-id="@Model.FoodId">Back to list</a>
+</div>

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<WebAppUI.Models.ViewModels.CardIngredientVm>
+<article class="me-2">
+    <h1>Ingredients</h1>
+</article>
+<section class="row">
+    @if (Model.Count() > 0)
+    {
+        @foreach (var item in Model)
+        {
+            <article class="me-2 col-lg-2">
+                @await Html.PartialAsync("Ingredient/_Card", item)
+            </article>
+        }
+    }
+    else
+    {
+        <article class="alert alert-warning" role="alert">There is no registered ingredient yet!</article>
+    }
+</section>

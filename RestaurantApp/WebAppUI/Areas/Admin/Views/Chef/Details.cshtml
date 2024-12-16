@@ -1,0 +1,85 @@
+﻿@model IndexChefFoodVm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>List of food items by the chef <strong>@Html.DisplayFor(m => Model.Name)</strong></h1>
+
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                Calories
+            </th>
+            <th>
+                Weight
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Stock
+            </th>
+            <th>
+                Final?
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListFoods!)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Calories) cal
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight) g
+                </td>
+                @if (item.NewPrice == 0)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price) RON
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <del>@Html.DisplayFor(m => item.Price)</del> @Html.DisplayFor(m => item.NewPrice) RON
+                    </td>
+                }
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsFinal)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@await Html.PartialAsync("_MessageResponse", "MessageChefFood")
+<div>
+    <partial name="_BackToList" />
+</div>

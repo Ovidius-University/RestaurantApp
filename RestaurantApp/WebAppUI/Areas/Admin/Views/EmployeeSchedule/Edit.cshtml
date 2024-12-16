@@ -1,0 +1,46 @@
+﻿@model ExistentEmployeeScheduleDto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit work day schedule for an employee</h1>
+<h2>Employee: @Html.DisplayFor(m => Model.Employee)</h2>
+<h2>Work day: @Html.DisplayFor(m => Model.Day)</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" asp-route-did="@Model.DayId" asp-route-eid="@Model.EmployeeId">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmployeeId" />
+            <input type="hidden" asp-for="DayId" />
+            <input type="hidden" asp-for="Employee" />
+            <input type="hidden" asp-for="Day" />
+            <div class="form-group">
+                <label asp-for="StartHour" class="control-label"></label>
+                <input asp-for="StartHour" class="form-control" />
+                <span asp-validation-for="StartHour" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndHour" class="control-label"></label>
+                <input asp-for="EndHour" class="form-control" />
+                <span asp-validation-for="EndHour" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-action="Index" asp-route-id="@Model.DayId">Back to list</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<br />
+@await Html.PartialAsync("_MessageResponse", "MessageEmployeeScheduleEdit")

@@ -1,0 +1,43 @@
+﻿﻿﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    if (User.IsInRole("Administrator"))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Index">Administration</a>
+        </li>
+    }
+    if (User.IsInRole("Manager"))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Manager" asp-controller="Home" asp-action="Index">Management</a>
+        </li>
+    }
+    if (User.IsInRole("Critic"))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Critic" asp-controller="Home" asp-action="Index">Reviewing</a>
+        </li>
+    }
+    if (User.IsInRole("Chef"))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Chef" asp-controller="Home" asp-action="Index">Chef Work</a>
+        </li>
+    }
+    if (User.IsInRole("Cashier"))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Cashier" asp-controller="Home" asp-action="Index">Cashier Work</a>
+        </li>
+    }
+    if (User.IsInRole("Delivery"))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Delivery" asp-controller="Home" asp-action="Index">Deliveries</a>
+        </li>
+    }
+}

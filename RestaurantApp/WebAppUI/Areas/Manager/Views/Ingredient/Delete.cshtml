@@ -1,0 +1,16 @@
+﻿@model ShortIngredientVm
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Are you sure you want to delete the ingredient: <span class="text-danger">@Html.DisplayFor(model => model.Name)</span>?</h1>
+<br />
+<div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IngredientId" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+    </form>
+</div>
+<br />
+<partial name="_BackToList" />

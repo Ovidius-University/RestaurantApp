@@ -1,0 +1,67 @@
+﻿@model OrderFeedBackDto
+
+@{
+    ViewData["Title"] = "FeedBack";
+}
+
+<h1>Order number @Html.DisplayFor(model => model.Id)</h1>
+<h2>Cost: @Html.DisplayFor(model => model.Cost) RON</h2>
+<hr />
+<div>
+    <h4>
+        <strong>The food items in the order </strong>
+    </h4>
+    @foreach(var item in Model.Foods!)
+    {
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(modelItem => item.Food)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(modelItem => item.Food)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(modelItem => item.UnitPrice)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(modelItem => item.UnitPrice) RON
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(modelItem => item.Quantity)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </dd>
+        </dl>
+    }
+</div>
+<div class="col-md-4">
+    <form asp-action="FeedBack">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Cost" />
+        <input type="hidden" asp-for="Foods" />
+            <div class="form-group col-md-6 mb-3">
+                <label asp-for="Comment" class="control-label"></label>
+            <input asp-for="Comment" class="form-control" />
+            <span asp-validation-for="Comment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @if (Model.IsNewFeedBack)
+                {
+                    <input type="submit" value="Add Feedback" class="btn btn-primary" />
+                }else{
+                    <input type="submit" value="Modify Feedback" class="btn btn-primary" />
+                }
+            </div>
+    </form>
+    <br />
+    <div>
+        <partial name="_BackToList" />
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

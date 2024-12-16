@@ -1,0 +1,50 @@
+﻿@model ExistentUserDto
+
+<div class="row">
+    <div class="col-md-4">
+        <h4>User: <strong>@Html.DisplayFor(m => Model.Email)</strong></h4>
+        <hr />
+        <form asp-action="Edit" asp-route-id="Id">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="Email" />
+            <div class="form-group form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsAdmin" /> @Html.DisplayNameFor(model => model.IsAdmin)
+                </label>
+            </div>
+            <div class="form-group form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsManager" /> @Html.DisplayNameFor(model => model.IsManager)
+                </label>
+            </div>
+            <div class="form-group form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsCritic" /> @Html.DisplayNameFor(model => model.IsCritic)
+                </label>
+            </div>
+            <div class="form-group form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsChef" /> @Html.DisplayNameFor(model => model.IsChef)
+                </label>
+            </div>
+            <div class="form-group form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsDelivery" /> @Html.DisplayNameFor(model => model.IsDelivery)
+                </label>
+            </div>
+            <div class="form-group form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsCashier" /> @Html.DisplayNameFor(model => model.IsCashier)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

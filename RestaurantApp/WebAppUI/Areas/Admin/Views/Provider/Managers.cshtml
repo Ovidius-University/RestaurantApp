@@ -1,0 +1,49 @@
+﻿@using WebAppUI.Areas.Admin.Models.ViewModels
+@using WebAppUI.Models.Entities
+@model ProviderManagersVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of managers associated with the provider <strong>@Model.Name</strong></h1>
+
+<p>
+    <a asp-action="AddManager" asp-route-id="@Model.Id" class="btn btn-sm btn-outline-success">Add a manager</a>
+</p>
+<div class="col-md-6">
+    @if (Model.ListManagers!.Count() > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Managers
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ListManagers!)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            <a asp-action="DeleteManager" asp-route-id="@item.Id" asp-route-pub="@Model.Id" asp-route-email="@item.Email">Remove</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p class="text-danger">There is no registered manager!</p>
+    }
+    <div>
+        <partial name="_BackToList" />
+    </div>
+    @await Html.PartialAsync("_MessageResponse","MessageProviderManager")
+</div>

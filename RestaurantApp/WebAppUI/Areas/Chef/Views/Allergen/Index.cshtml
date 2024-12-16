@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ShortAllergenVm>
+
+@{
+    ViewData["Title"] = "List of allergens";
+}
+<div class="col-md-6">
+    <h1>@ViewBag.Title</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-sm btn-outline-success">Add an allergen</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.AllergenId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.AllergenId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.AllergenId">Delete</a>|
+                        <a asp-action="AddFood" asp-route-id="@item.AllergenId">Add food item</a> |
+                        <a asp-action="RemoveFood" asp-route-id="@item.AllergenId">Remove food item</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @await Html.PartialAsync("_MessageResponse", "MessageAllergen")
+</div>

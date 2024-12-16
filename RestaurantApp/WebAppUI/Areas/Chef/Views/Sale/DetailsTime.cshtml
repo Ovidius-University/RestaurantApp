@@ -1,0 +1,65 @@
+﻿@model SaleTimeVm
+
+@{
+    ViewData["Title"] = "DetailsItem";
+    decimal cost = 0;
+    int solds = 0;
+}
+
+@if (Model.id == 1)
+{
+    <h1>Sales of menu items by the chef <strong>@Html.DisplayFor(m => Model.Chef)</strong> in the last day</h1>
+}
+else if (Model.id == 2)
+{
+    <h1>Sales of menu items by the chef <strong>@Html.DisplayFor(m => Model.Chef)</strong> in the last month</h1>
+}
+else if (Model.id == 3)
+{
+    <h1>Sales of menu items by the chef <strong>@Html.DisplayFor(m => Model.Chef)</strong> in the last year</h1>
+}
+
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Units sold
+            </th>
+            <th>
+                Profit
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListSales!)
+        {
+            solds += item.Quantity;
+            cost += item.TotalSales;
+         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalSales) RON
+            </td>
+            <td>
+                <a asp-action="DetailsTimeItem" asp-route-id="@item.FoodId" asp-route-tid="@Model.id">Details</a>
+            </td>   
+        </tr>
+        }
+        <h2>Total sales of the items is: @solds</h2>
+        <h2>Total profits of the items is: @cost RON</h2>
+        <br/>
+    </tbody>
+</table>
+<div>
+    <partial name="_BackToList" />
+</div>

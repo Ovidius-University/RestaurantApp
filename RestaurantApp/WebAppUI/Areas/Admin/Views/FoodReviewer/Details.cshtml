@@ -1,0 +1,46 @@
+﻿@model IndexFoodReviewerVm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>List of food reviews by the company <strong>@Html.DisplayFor(m => Model.Name)</strong></h1>
+
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Content
+            </th>
+            <th>
+                Final?
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListReviews!)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Content)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsFinal)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@await Html.PartialAsync("_MessageResponse", "MessageFoodReviewer")
+<div>
+    <partial name="_BackToList" />
+</div>

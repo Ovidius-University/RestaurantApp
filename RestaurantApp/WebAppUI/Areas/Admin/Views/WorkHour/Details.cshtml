@@ -1,0 +1,40 @@
+﻿@model ExistentWorkHourDto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div>
+    @*<h4>Work Day</h4>*@
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StartHour)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StartHour)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EndHour)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EndHour)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsWorkDay)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsWorkDay)
+        </dd>
+    </dl>
+</div>
+<div>
+    <partial name="_BackToList" />
+</div>

@@ -1,0 +1,22 @@
+﻿@model List<CardFoodVm>
+<section class="row">
+    <article class="me-2">
+        <h1>Suggested food items (what you have never purchased on this account)</h1>
+    </article>
+    <br />
+    <section class="row">
+        @if (Model.Count() > 0)
+        {
+            @foreach (var item in Model)
+            {
+                <article class="col-4 mb-3">
+                    @await Html.PartialAsync("Food/_Card", item)
+                </article>
+            }
+        }
+        else
+        {
+            <article class="alert alert-warning" role="alert">There is no available suggestion, as you have purchased everything from our restaurant!</article>
+        }
+    </section>
+</section>

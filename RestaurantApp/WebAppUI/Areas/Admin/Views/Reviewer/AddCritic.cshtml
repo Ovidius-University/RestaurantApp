@@ -1,0 +1,29 @@
+﻿@model ReviewerCriticDto
+
+<h4>Add a critic for <strong>@Model.Reviewer</strong></h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddCritic" asp-route-id="@Model.ReviewerId">
+            <input type="hidden" asp-for="ReviewerId" class="form-control" />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="CriticId" class="control-label"></label>
+                <select asp-for="CriticId" asp-items="@ViewBag.Critics" class="form-control"></select>
+                <span asp-validation-for="CriticId" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@await Html.PartialAsync("_MessageResponse", "MessageReviewerCritic")
+<div>
+    <partial name="_BackToList" /> 
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

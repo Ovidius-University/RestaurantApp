@@ -1,0 +1,30 @@
+﻿﻿﻿@using WebAppUI.Models.ViewModels
+@model CardFoodVm
+<div class="card h-100">
+    <div class="card-body">
+        <h1 class="card-text">@Html.DisplayFor(m => Model.Title)</h1>
+        <hr />
+        @if (Model.PromoText != string.Empty)
+        {
+            <h2 class="card-title">@Html.DisplayFor(m => Model.PromoText)</h2>
+        }
+        <h3 class="card-subtitle mb-2 text-body-secondary">
+            @if(Model.HomeMade.Equals("Yes"))
+                    {@Html.DisplayFor(m => Model.Chef)}
+            else if (Model.HomeMade.Equals("No"))
+                    {@Html.DisplayFor(m => Model.Provider)}
+        </h3>
+        <h4 class="card-subtitle mb-2 text-body-secondary">@Html.DisplayFor(m => Model.Category)</h4>
+        <h4 class="card-subtitle mb-2 text-body-secondary">@Html.DisplayFor(m => Model.Calories) cal</h4>
+        <h4 class="card-subtitle mb-2 text-body-secondary">@Html.DisplayFor(m => Model.Weight) g</h4>
+            @if (Model.NewPrice == 0)
+            {
+                <h5 class="card-title">@Html.DisplayFor(m => Model.Price) RON</h5>
+            }
+            else
+            {
+                <h5 class="card-title"><del>@Html.DisplayFor(m => Model.Price)</del> @Html.DisplayFor(m => Model.NewPrice) RON</h5>
+            }
+        <a asp-controller="Review" asp-action="Index" asp-route-id="@Model.Id" class="card-link">Reviews</a>
+    </div>
+</div>

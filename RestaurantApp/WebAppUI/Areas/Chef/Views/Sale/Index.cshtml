@@ -1,0 +1,60 @@
+﻿@model IndexSalesVm
+
+@{
+    ViewData["Title"] = "Index";
+    decimal cost = 0;
+    int solds = 0;
+}
+
+<h1>All-time sales of menu items by the chef <strong>@Html.DisplayFor(m => Model.Chef)</strong></h1>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Units sold
+            </th>
+            <th>
+                Profit
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListSales!)
+        {
+            solds += item.Quantity;
+            cost += item.TotalSales;
+         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalSales) RON
+            </td>
+            <td>
+                @*<a asp-action="Edit" asp-route-oid="@item.OrderId" asp-route-id="@item.FoodId">Edit</a> |*@
+                <a asp-action="DetailsItem" asp-route-id="@item.FoodId">Details</a>
+                @* | <a asp-action="Delete" asp-route-oid="@item.OrderId" asp-route-id="@item.FoodId">Remove</a>*@
+            </td>
+        </tr>
+        }
+        <h2>Total sales of the items is: @solds</h2>
+        <h2>Total profits of the items is: @cost RON</h2>
+        <br/>
+        <a asp-action="DetailsTime" asp-route-id=1 class="btn btn-sm btn-primary">Last day</a>
+         | 
+        <a asp-action="DetailsTime" asp-route-id=2 class="btn btn-sm btn-primary">Last month</a>
+         | 
+        <a asp-action="DetailsTime" asp-route-id=3 class="btn btn-sm btn-primary">Last year</a>
+        <br />
+        <br />
+    </tbody>
+</table>
+@await Html.PartialAsync("_MessageResponse", "MessageSales")

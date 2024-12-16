@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ExistentPrivacyDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Privacy Policy</h1>
+
+<div class="col-md-6">
+    @if (Model.Count() > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Policy)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Policy)
+                        </td>
+                        <td>
+                            @*<a asp-action="Orders" asp-route-id="@item.Id">Orders</a> |*@
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit Privacy Policy</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Privacy Policy Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+
+        <p class="text-danger">There is no privacy policy!</p>
+        <a asp-action="Edit" class="btn btn-outline-success">Add Privacy Policy</a>
+    }
+    @await Html.PartialAsync("_MessageResponse", "MessagePrivacy")
+</div>

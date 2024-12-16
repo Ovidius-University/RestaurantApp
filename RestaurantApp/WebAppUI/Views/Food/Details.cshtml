@@ -1,0 +1,84 @@
+﻿@model FoodDetailsVm
+<article class="row">
+    <article class="me-2">
+        <h2>@Html.DisplayFor(m => Model.Title)</h2>
+    </article>
+    <hr />
+    <article class="me-2">
+        <dl>
+            @if (Model.ListIngredients!.Count>0)
+            {
+                <dt>Ingredients:</dt>
+                <dd>
+                    <ul>
+                        @foreach (var item in Model.ListIngredients!)
+                        {
+                            <li>@Html.DisplayFor(m => item.Name)</li>
+                        }
+                    </ul>
+                </dd>
+            }
+            else
+            {
+                <dt>There are no ingredients for this food item</dt><dd></dd>
+            }
+            @if (Model.ListAllergens!.Count > 0)
+            {
+                <dt>Allergens:</dt>
+                <dd>
+                    <ul>
+                        @foreach (var item in Model.ListAllergens!)
+                        {
+                            <li>@Html.DisplayFor(m => item.Name)</li>
+                        }
+                    </ul>
+                </dd>
+            }
+            else
+            {
+                <dt>There are no allergens for this food item</dt>
+                <dd></dd>
+            }
+            <dt>Description:</dt>
+            <dd>@Html.DisplayFor(m => Model.Description)</dd>
+            <dt>Category:</dt>
+            <dd>
+                    <a asp-controller="Category" asp-action="Details" asp-route-id="@Model.CategoryId">@Html.DisplayFor(m => Model.Category)</a>
+            </dd>
+            @if (Model.HomeMade.Equals("Yes"))
+            {
+                <dt>Chef:</dt>
+                <dd>
+                    <a asp-controller="Chef" asp-action="Details" asp-route-id="@Model.ChefId">@Html.DisplayFor(m => Model.Chef)</a>
+                </dd>
+            }
+            else
+            {
+                <dt>Provider:</dt>
+                <dd>
+                    <a asp-controller="Provider" asp-action="Details" asp-route-id="@Model.ProviderId">@Html.DisplayFor(m => Model.Provider)</a>
+                </dd>
+            }
+            <dt>Calories: </dt>
+            <dd>@Html.DisplayFor(m => Model.Calories) cal</dd>
+            <dt>Weight: </dt>
+            <dd>@Html.DisplayFor(m => Model.Weight) g</dd>
+            <dt>Stock: </dt>
+            <dd>@Html.DisplayFor(m => Model.Stock)</dd>
+            <dt>Price</dt>
+            <dd>@if(Model.NewPrice==0)
+                {
+                    <div>@Html.DisplayFor(m => Model.Price) RON</div>
+                }
+                else
+                {
+                    <div><del>@Html.DisplayFor(m => Model.Price)</del> @Html.DisplayFor(m => Model.NewPrice) RON</div>
+                }
+            </dd>
+            <a asp-controller="ShopCart" asp-action="Create" class="btn btn-sm btn-primary">Add a food item to your shopping cart</a>
+        </dl>
+    </article>
+</article>
+<div>
+    <partial name="_BackToList" />
+</div>

@@ -1,0 +1,33 @@
+﻿@model NewPayingMethodDto
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Creation</h1>
+
+<h4>New paying method</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 mb-3">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <partial name="_BackToList" />
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

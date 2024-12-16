@@ -1,0 +1,18 @@
+﻿@model ExistentPrivacyDto
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="text-center">
+    <h1 class ="display-4">@ViewData["Title"]</h1>
+    <br />
+    <hr />
+    <div class="text-center">
+        @if (Model == null || Model.Policy == null || Model.Policy.Count() == 0)
+        {
+            <h1>The admin needs to add the privacy policy of the website.</h1>
+        }
+        else{<h6>@Html.DisplayFor(model => model.Policy)</h6>}
+    </div>
+</div>

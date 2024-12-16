@@ -1,0 +1,30 @@
+﻿@model ReviewDetailsVm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1><strong>Reviewing company: </strong> @Html.DisplayFor(model => model.Reviewer)</h1>
+<div>
+    <h4>
+        <strong>Food item: </strong> @Html.DisplayFor(model => model.Food)
+    </h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsFinal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsFinal)
+        </dd>
+    </dl>
+</div>
+<div>
+    <partial name="_BackToList" />
+</div>

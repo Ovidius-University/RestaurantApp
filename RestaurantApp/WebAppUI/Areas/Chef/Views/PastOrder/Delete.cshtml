@@ -1,0 +1,86 @@
+﻿@model OrderDetailsVm
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Remove order</h1>
+
+<h2>Are you sure you want to remove this order? Do this only if you talked with the customer and they agreed.</h2>
+<div>
+    <h4>
+        <strong>Order: </strong> @Html.DisplayFor(model => model.Id)
+    </h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Customer) Email
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Customer)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cost) RON
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsDelivery)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsDelivery)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tip)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tip) RON
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PayingMethod)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PayingMethod)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArrivalTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArrivalTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsFinal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsFinal)
+        </dd>
+        @if (Model.IsFinal == true)
+        {
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeliveryTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeliveryTime)
+        </dd>
+        }
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Remove" class="btn btn-danger" /> |
+        <partial name="_BackToList" />
+    </form>
+</div>

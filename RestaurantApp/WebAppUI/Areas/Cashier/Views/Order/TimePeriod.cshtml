@@ -1,0 +1,86 @@
+﻿@model OrderTimeVm
+
+@{
+    ViewData["Title"] = "TimePeriod";
+}
+
+@if (Model.id == 1)
+{
+    <h1>Website pick-ups in the last day you need to confirm</h1>
+}
+else if (Model.id == 2)
+{
+    <h1>Website pick-ups in the last month you need to confirm</h1>
+}
+else if (Model.id == 3)
+{
+    <h1>Website pick-ups in the last year you need to confirm</h1>
+}
+
+<br />
+@await Html.PartialAsync("_MessageResponse", "MessageCashierOrder")
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Order Number
+            </th>
+            <th>
+                Customer Name
+            </th>
+            <th>
+                Cost (without tip)
+            </th>
+            <th>
+                Tip
+            </th>
+            <th>
+                Paying Method
+            </th>
+            <th>
+                Order Time
+            </th>
+            <th>
+                Picked Arrival Time
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListOrders!)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cost) RON
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tip) RON
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PayingMethod)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArrivalTime)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Confirm pick-up</a> |
+                    <a asp-controller="OrderContent" asp-action="Index" asp-route-oid="@item.Id">Order's items</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                </td>
+            </tr>
+        }
+        <br />
+    </tbody>
+</table>
+<div>
+    <partial name="_BackToList" />
+</div>

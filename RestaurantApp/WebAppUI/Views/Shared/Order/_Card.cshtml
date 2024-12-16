@@ -1,0 +1,29 @@
+﻿﻿﻿@using WebAppUI.Models.ViewModels
+@model CardOrderVm
+<div class="card h-100">
+    <div class="card-body">
+        <h1 class="card-text">Order number: @Html.DisplayFor(m => Model.Id)</h1>
+        @if (Model.IsDelivery == true)
+        {
+            <h2 class="card-title">@Html.DisplayFor(m => Model.Address)</h2>
+        }
+        else
+        {
+            <h2 class="card-title">It's a pick-up order at the restaurant</h2>
+        }
+        <h3 class="card-subtitle mb-2 text-body-secondary">
+            Cost: @Html.DisplayFor(m => Model.Cost) RON (Tip: @Html.DisplayFor(m => Model.Tip) RON)
+        </h3>
+            <h4 class="card-subtitle mb-2 text-body-secondary">Paying Method: @Html.DisplayFor(m => Model.PayingMethod)</h4>
+            <h5 class="card-subtitle mb-2 text-body-secondary">Wanted Arrival Time: @Html.DisplayFor(m => Model.ArrivalTime)</h5>
+            @if (Model.IsFinal == true)
+            {
+            <h6 class="card-title">Order finished on: @Html.DisplayFor(m => Model.DeliveryTime)</h6>
+            }
+            else
+            {
+            <h6 class="card-title">Order isn't finished yet</h6>
+            }
+            <a asp-controller="Order" asp-action="Details" asp-route-id="@Model.Id" class="card-link">Details</a>
+    </div>
+</div>

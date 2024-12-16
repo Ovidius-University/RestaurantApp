@@ -1,0 +1,10 @@
+﻿﻿﻿﻿@using WebAppUI.Models.ViewModels
+@model CardProviderVm
+<div class="card h-100">
+    <div class="card-body">
+        <h3 class="card-title">@Html.DisplayFor(m => Model.Name)</h3>
+        <hr />
+        @*<a asp-action="Details" asp-route-id="@Model.ProviderId" class="card-link">Foods</a>*@
+        @Html.ActionLink("Food items and ingredients", "Details", new { id = Model.ProviderId }, new { @class = "card-link" })
+    </div>
+</div>

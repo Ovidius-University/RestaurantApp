@@ -1,0 +1,96 @@
+﻿@model ExistentOrderDto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@if (Model.IsFinal == true)
+{
+    <h1>Are you sure you want to confirm the pick-up of the order?</h1>
+}
+else
+{
+    <h1>Are you sure you want to unconfirm the pick-up of the order?</h1>
+}
+
+<h2>Order number: @Html.DisplayFor(m => Model.Id)</h2>
+<h2>Customer name: @Html.DisplayFor(m => Model.Name)</h2>
+<h3>Tip: @Html.DisplayFor(m => Model.Tip) RON</h3>
+<h3>Paying Method: @Html.DisplayFor(m => Model.PayingMethod)</h3>
+<h5>Arrival Time: @Html.DisplayFor(m => Model.ArrivalTime)</h5>
+@if (Model.IsFinal == false)
+{
+    <h5>Delivery Time: @Html.DisplayFor(m => Model.DeliveryTime)</h5>
+}
+<hr />
+@await Html.PartialAsync("_MessageResponse", "MessageOrderEdit")
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="Name" />
+            <input type="hidden" asp-for="IsDelivery" />
+            <input type="hidden" asp-for="WorkerId" />
+            <input type="hidden" asp-for="ArrivalTime" />
+            <input type="hidden" asp-for="Tip" />
+            <input type="hidden" asp-for="PayingMethodId" />
+            <input type="hidden" asp-for="PayingMethod" />
+            <input type="hidden" asp-for="IsFinal" />
+            <div class="row">
+                @*
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsDelivery" /> @Html.DisplayNameFor(model => model.IsDelivery)
+                    </label>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Tip" class="control-label"></label>
+                    <input asp-for="Tip" class="form-control" />
+                    <span asp-validation-for="Tip" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="PayingMethodId" class="control-label"></label>
+                    <select asp-for="PayingMethodId" asp-items="@ViewBag.AvailablePayingMethods" class="form-control"></select>
+                    <span asp-validation-for="PayingMethodId" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="ArrivalTime" class="control-label"></label>
+                    <input asp-for="ArrivalTime" class="form-control" />
+                    <span asp-validation-for="ArrivalTime" class="text-danger"></span>
+                </div>
+                *@
+                @if (Model.IsFinal == true)
+                {
+                    <div class="form-group">
+                        <input type="submit" value="Confirm" class="btn btn-primary" />
+                    </div>
+                }
+                else
+                {
+                    <div class="form-group">
+                        <input type="submit" value="Unconfirm" class="btn btn-primary" />
+                    </div>
+                }
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <partial name="_BackToList" />
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

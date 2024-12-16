@@ -1,0 +1,85 @@
+﻿@model StoreInfoVm
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to <strong>@Html.DisplayFor(model => model.Information!.Name)</strong>!</h1>
+    <br />
+    <h2 class="display-5">@Html.DisplayFor(model => model.Information!.Description)</h2>
+    <br />
+    @await Html.PartialAsync("_MessageResponse", "MessageHome")
+    <hr />
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+    <div class="text-center">
+        <h2>Restaurant Information</h2>
+        <br />
+        @if (Model == null)
+        {
+            <h3>The admin needs to add the eestaurant information and the restaurant work hours for every week day.</h3>
+        }
+        @if (Model!.Information == null)
+        {
+            <h3>The admin needs to add the restaurant information.</h3>
+        }
+        @if (Model != null && Model!.Information != null)
+        {<dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Information!.Location):
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Information!.Location)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Information!.PhoneNumber) contact:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Information!.PhoneNumber)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Information!.Email) contact:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Information!.Email)
+            </dd>
+        </dl>}
+    </div>
+    <hr />
+    <div class="text-center">
+    <h2>Restaurant Hours</h2>
+    <br />
+        @if (Model!.WorkHours == null)
+        {
+            <h3>The admin needs to add the restaurant work hours for every week day.</h3>
+        }
+        
+    else{<dl class="row">
+        @foreach (var item in Model.WorkHours!)
+        {
+            <dt class="col-lg-2">
+                @Html.DisplayFor(modelItem => item.Name):
+            </dt>
+            if (item is null)
+            {
+                <dd class="col-lg-10">The admin needs to add the restaurant work hours for this week day.</dd>
+            }
+            else
+            {
+                if (item.IsWorkDay)
+                {
+                    <dd class="col-lg-10">
+                        @Html.DisplayFor(modelItem => item.StartHour) - @Html.DisplayFor(modelItem => item.EndHour)
+                    </dd>
+                }
+                else
+                {
+                    <dd class="col-lg-10">
+                        The restaurant is not open on this day
+                    </dd>
+                }
+            }
+        }
+        </dl>}
+    </div>
+</div>

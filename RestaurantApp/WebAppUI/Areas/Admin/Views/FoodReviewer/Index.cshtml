@@ -1,0 +1,46 @@
+﻿@model IndexReviewerVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of the reviewers</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Reviewer id
+            </th>
+            <th>
+                Reviewer name
+            </th>
+            <th>
+                Number of food reviews
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListReviewers!)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reviews)
+            </td>
+            @if(item.Reviews > 0)
+            {
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ReviewerId">Food reviews</a>
+                </td>
+            }
+        </tr>
+        }<br />
+    </tbody>
+</table>
+@await Html.PartialAsync("_MessageResponse", "MessageReviewer")

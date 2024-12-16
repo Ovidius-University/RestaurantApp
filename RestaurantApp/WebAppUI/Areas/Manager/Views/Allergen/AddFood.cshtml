@@ -1,0 +1,29 @@
+﻿@model AllergenAddFoodDto
+
+<h1>Add a food item for the allergen <strong>@Model.Allergen</strong></h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="AddFood" asp-route-id="@Model.AllergenId">
+            <input type="hidden" asp-for="AllergenId" class="form-control" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="FoodId" class="control-label"></label>
+                <select asp-for="FoodId" asp-items="@ViewBag.AvailableFoods" class="form-control"></select>
+                <span asp-validation-for="FoodId" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <input type="submit" value="Associate food item" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <partial name="_BackToList" />
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

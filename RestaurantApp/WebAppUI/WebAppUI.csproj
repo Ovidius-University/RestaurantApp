@@ -1,0 +1,421 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-WebAppUI-1973f1a4-cbaa-4712-8bf4-ea13f5748ed1</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Entities\Chef.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Areas\Admin\Views\Chef\Details.cshtml" />
+    <Content Remove="Areas\Admin\Views\Chef\Index.cshtml" />
+    <Content Remove="Areas\Admin\Views\EmployeeSchedule\WeekDays.cshtml" />
+    <Content Remove="Areas\Admin\Views\EmployeeWork\OrdersEmp.cshtml" />
+    <Content Remove="Areas\Admin\Views\EmployeeWork\OrdersTime.cshtml" />
+    <Content Remove="Areas\Admin\Views\EmployeeWork\OrdersTimeEmp.cshtml" />
+    <Content Remove="Areas\Admin\Views\FoodProvider\Details.cshtml" />
+    <Content Remove="Areas\Admin\Views\FoodProvider\Index.cshtml" />
+    <Content Remove="Areas\Admin\Views\FoodReviewer\Details.cshtml" />
+    <Content Remove="Areas\Admin\Views\FoodReviewer\Index.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrder\Delete.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrder\Details.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrder\Edit.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrder\FeedBack.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrder\Index.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrder\TimePeriod.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrderContent\Create.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrderContent\Delete.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrderContent\Details.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrderContent\Edit.cshtml" />
+    <Content Remove="Areas\Admin\Views\PastOrderContent\Index.cshtml" />
+    <Content Remove="Areas\Admin\Views\Order\TimePeriod.cshtml" />
+    <Content Remove="Areas\Admin\Views\EmployeeWork\Index.cshtml" />
+    <Content Remove="Areas\Admin\Views\Sale\DetailsItem.cshtml" />
+    <Content Remove="Areas\Admin\Views\Sale\DetailsTime.cshtml" />
+    <Content Remove="Areas\Admin\Views\Sale\DetailsTimeItem.cshtml" />
+    <Content Remove="Areas\Admin\Views\Sale\Index.cshtml" />
+    <Content Remove="Areas\Cashier\Views\OrderContent\Create.cshtml" />
+    <Content Remove="Areas\Cashier\Views\OrderContent\Delete.cshtml" />
+    <Content Remove="Areas\Cashier\Views\OrderContent\Details.cshtml" />
+    <Content Remove="Areas\Cashier\Views\OrderContent\Edit.cshtml" />
+    <Content Remove="Areas\Cashier\Views\OrderContent\Index.cshtml" />
+    <Content Remove="Areas\Cashier\Views\Order\TimePeriod.cshtml" />
+    <Content Remove="Areas\Cashier\Views\PastOrder\Delete.cshtml" />
+    <Content Remove="Areas\Cashier\Views\PastOrder\Details.cshtml" />
+    <Content Remove="Areas\Cashier\Views\PastOrder\Edit.cshtml" />
+    <Content Remove="Areas\Cashier\Views\PastOrder\FeedBack.cshtml" />
+    <Content Remove="Areas\Cashier\Views\PastOrder\Index.cshtml" />
+    <Content Remove="Areas\Cashier\Views\PastOrder\TimePeriod.cshtml" />
+    <Content Remove="Areas\Chef\Views\Allergen\AddFood.cshtml" />
+    <Content Remove="Areas\Chef\Views\Allergen\Create.cshtml" />
+    <Content Remove="Areas\Chef\Views\Allergen\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\Allergen\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\Allergen\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\Allergen\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\Allergen\RemoveFood.cshtml" />
+    <Content Remove="Areas\Chef\Views\Category\Create.cshtml" />
+    <Content Remove="Areas\Chef\Views\Category\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\Category\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\Category\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\Category\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\Food\Create.cshtml" />
+    <Content Remove="Areas\Chef\Views\Food\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\Food\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\Food\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\Food\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\Food\Offer.cshtml" />
+    <Content Remove="Areas\Chef\Views\Home\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\Ingredient\AddFood.cshtml" />
+    <Content Remove="Areas\Chef\Views\Ingredient\Create.cshtml" />
+    <Content Remove="Areas\Chef\Views\Ingredient\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\Ingredient\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\Ingredient\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\Ingredient\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\Ingredient\RemoveFood.cshtml" />
+    <Content Remove="Areas\Chef\Views\Offer\Create.cshtml" />
+    <Content Remove="Areas\Chef\Views\Offer\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\Offer\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\Offer\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\Offer\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrder\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrder\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrder\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrder\FeedBack.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrder\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrder\TimePeriod.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrderContent\Create.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrderContent\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrderContent\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrderContent\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\PastOrderContent\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\OrderContent\Create.cshtml" />
+    <Content Remove="Areas\Chef\Views\OrderContent\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\OrderContent\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\OrderContent\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\OrderContent\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\Order\Delete.cshtml" />
+    <Content Remove="Areas\Chef\Views\Order\Details.cshtml" />
+    <Content Remove="Areas\Chef\Views\Order\Edit.cshtml" />
+    <Content Remove="Areas\Chef\Views\Order\FeedBack.cshtml" />
+    <Content Remove="Areas\Chef\Views\Order\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\Order\TimePeriod.cshtml" />
+    <Content Remove="Areas\Chef\Views\Sale\DetailsItem.cshtml" />
+    <Content Remove="Areas\Chef\Views\Sale\DetailsTime.cshtml" />
+    <Content Remove="Areas\Chef\Views\Sale\DetailsTimeItem.cshtml" />
+    <Content Remove="Areas\Chef\Views\Sale\Index.cshtml" />
+    <Content Remove="Areas\Chef\Views\Shared\Offer\_AddEdit.cshtml" />
+    <Content Remove="Areas\Delivery\Views\Order\TimePeriod.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrder\Delete.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrder\Details.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrder\Edit.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrder\FeedBack.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrder\Index.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrder\TakeOrder.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrderContent\Create.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrderContent\Delete.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrderContent\Details.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrderContent\Edit.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrderContent\Index.cshtml" />
+    <Content Remove="Areas\Delivery\Views\PastOrder\TimePeriod.cshtml" />
+    <Content Remove="Areas\Manager\Views\Allergen\AddFood.cshtml" />
+    <Content Remove="Areas\Manager\Views\Allergen\Create.cshtml" />
+    <Content Remove="Areas\Manager\Views\Allergen\Delete.cshtml" />
+    <Content Remove="Areas\Manager\Views\Allergen\Details.cshtml" />
+    <Content Remove="Areas\Manager\Views\Allergen\Edit.cshtml" />
+    <Content Remove="Areas\Manager\Views\Allergen\Index.cshtml" />
+    <Content Remove="Areas\Manager\Views\Allergen\RemoveFood.cshtml" />
+    <Content Remove="Areas\Manager\Views\Ingredient\AddFood.cshtml" />
+    <Content Remove="Areas\Manager\Views\Ingredient\RemoveFood.cshtml" />
+    <Content Remove="Areas\Manager\Views\OrderContent\Create.cshtml" />
+    <Content Remove="Areas\Manager\Views\OrderContent\Delete.cshtml" />
+    <Content Remove="Areas\Manager\Views\OrderContent\Details.cshtml" />
+    <Content Remove="Areas\Manager\Views\OrderContent\Edit.cshtml" />
+    <Content Remove="Areas\Manager\Views\OrderContent\Index.cshtml" />
+    <Content Remove="Areas\Manager\Views\Order\Delete.cshtml" />
+    <Content Remove="Areas\Manager\Views\Order\Details.cshtml" />
+    <Content Remove="Areas\Manager\Views\Order\Edit.cshtml" />
+    <Content Remove="Areas\Manager\Views\Order\FeedBack.cshtml" />
+    <Content Remove="Areas\Manager\Views\Order\Index.cshtml" />
+    <Content Remove="Areas\Manager\Views\Order\TimePeriod.cshtml" />
+    <Content Remove="Areas\Manager\Views\Sale\DetailsItem.cshtml" />
+    <Content Remove="Areas\Manager\Views\Sale\DetailsTime.cshtml" />
+    <Content Remove="Areas\Manager\Views\Sale\DetailsTimeItem.cshtml" />
+    <Content Remove="Areas\Manager\Views\Sale\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.16" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+    <PackageReference Include="SendGrid" Version="9.29.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Cashier\Data\" />
+    <Folder Include="Areas\Chef\Data\" />
+    <Folder Include="Areas\Critic\Data\" />
+    <Folder Include="Areas\Delivery\Data\" />
+    <Folder Include="Areas\Manager\Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\Chef\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Chef\Index.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeSchedule\Create.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeSchedule\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeSchedule\Details.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeSchedule\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeSchedule\Index.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeSchedule\WeekDays.cshtml" />
+    <None Include="Areas\Admin\Views\FoodProvider\Index.cshtml" />
+    <None Include="Areas\Admin\Views\FoodProvider\Details.cshtml" />
+    <None Include="Areas\Admin\Views\FoodReviewer\Details.cshtml" />
+    <None Include="Areas\Admin\Views\FoodReviewer\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Gender\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Gender\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Gender\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Gender\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Gender\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Information\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Information\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Information\Index.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrder\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrder\Details.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrder\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrder\FeedBack.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrder\Index.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrder\TimePeriod.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrderContent\Create.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrderContent\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrderContent\Details.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrderContent\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\PastOrderContent\Index.cshtml" />
+    <None Include="Areas\Admin\Views\OrderContent\Create.cshtml" />
+    <None Include="Areas\Admin\Views\OrderContent\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\OrderContent\Details.cshtml" />
+    <None Include="Areas\Admin\Views\OrderContent\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\OrderContent\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Order\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Order\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Order\TimePeriod.cshtml" />
+    <None Include="Areas\Admin\Views\Order\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Order\FeedBack.cshtml" />
+    <None Include="Areas\Admin\Views\Order\Index.cshtml" />
+    <None Include="Areas\Admin\Views\PayingMethod\Create.cshtml" />
+    <None Include="Areas\Admin\Views\PayingMethod\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\PayingMethod\Details.cshtml" />
+    <None Include="Areas\Admin\Views\PayingMethod\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\PayingMethod\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Privacy\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Privacy\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Privacy\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Provider\AddManager.cshtml" />
+    <None Include="Areas\Admin\Views\Provider\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Provider\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Provider\DeleteManager.cshtml" />
+    <None Include="Areas\Admin\Views\Provider\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Provider\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Provider\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Provider\Managers.cshtml" />
+    <None Include="Areas\Admin\Views\Reviewer\AddCritic.cshtml" />
+    <None Include="Areas\Admin\Views\Reviewer\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Reviewer\Critics.cshtml" />
+    <None Include="Areas\Admin\Views\Reviewer\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Reviewer\DeleteCritic.cshtml" />
+    <None Include="Areas\Admin\Views\Reviewer\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Reviewer\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Reviewer\Index.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeWork\OrdersEmp.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeWork\OrdersTime.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeWork\OrdersTimeEmp.cshtml" />
+    <None Include="Areas\Admin\Views\EmployeeWork\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Sale\DetailsItem.cshtml" />
+    <None Include="Areas\Admin\Views\Sale\DetailsTime.cshtml" />
+    <None Include="Areas\Admin\Views\Sale\DetailsTimeItem.cshtml" />
+    <None Include="Areas\Admin\Views\Sale\Index.cshtml" />
+    <None Include="Areas\Admin\Views\SpecialDay\Create.cshtml" />
+    <None Include="Areas\Admin\Views\SpecialDay\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\SpecialDay\Details.cshtml" />
+    <None Include="Areas\Admin\Views\SpecialDay\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\SpecialDay\Index.cshtml" />
+    <None Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\User\Index.cshtml" />
+    <None Include="Areas\Admin\Views\WorkHour\Details.cshtml" />
+    <None Include="Areas\Admin\Views\WorkHour\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\WorkHour\Index.cshtml" />
+    <None Include="Areas\Cashier\Views\Home\Index.cshtml" />
+    <None Include="Areas\Cashier\Views\OrderContent\Create.cshtml" />
+    <None Include="Areas\Cashier\Views\OrderContent\Delete.cshtml" />
+    <None Include="Areas\Cashier\Views\OrderContent\Details.cshtml" />
+    <None Include="Areas\Cashier\Views\OrderContent\Edit.cshtml" />
+    <None Include="Areas\Cashier\Views\OrderContent\Index.cshtml" />
+    <None Include="Areas\Cashier\Views\Order\TimePeriod.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrder\Delete.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrder\Details.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrder\Edit.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrder\FeedBack.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrder\Index.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrderContent\Create.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrderContent\Delete.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrderContent\Details.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrderContent\Edit.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrderContent\Index.cshtml" />
+    <None Include="Areas\Cashier\Views\Order\Delete.cshtml" />
+    <None Include="Areas\Cashier\Views\Order\Details.cshtml" />
+    <None Include="Areas\Cashier\Views\Order\Edit.cshtml" />
+    <None Include="Areas\Cashier\Views\Order\FeedBack.cshtml" />
+    <None Include="Areas\Cashier\Views\Order\Index.cshtml" />
+    <None Include="Areas\Cashier\Views\Food\Details.cshtml" />
+    <None Include="Areas\Cashier\Views\Food\Edit.cshtml" />
+    <None Include="Areas\Cashier\Views\Food\Index.cshtml" />
+    <None Include="Areas\Cashier\Views\PastOrder\TimePeriod.cshtml" />
+    <None Include="Areas\Chef\Views\Allergen\AddFood.cshtml" />
+    <None Include="Areas\Chef\Views\Allergen\Create.cshtml" />
+    <None Include="Areas\Chef\Views\Allergen\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\Allergen\Details.cshtml" />
+    <None Include="Areas\Chef\Views\Allergen\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\Allergen\Index.cshtml" />
+    <None Include="Areas\Chef\Views\Allergen\RemoveFood.cshtml" />
+    <None Include="Areas\Chef\Views\Category\Create.cshtml" />
+    <None Include="Areas\Chef\Views\Category\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\Category\Details.cshtml" />
+    <None Include="Areas\Chef\Views\Category\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\Category\Index.cshtml" />
+    <None Include="Areas\Chef\Views\Food\Create.cshtml" />
+    <None Include="Areas\Chef\Views\Food\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\Food\Details.cshtml" />
+    <None Include="Areas\Chef\Views\Food\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\Food\Index.cshtml" />
+    <None Include="Areas\Chef\Views\Food\Offer.cshtml" />
+    <None Include="Areas\Chef\Views\Ingredient\AddFood.cshtml" />
+    <None Include="Areas\Chef\Views\Ingredient\Create.cshtml" />
+    <None Include="Areas\Chef\Views\Ingredient\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\Ingredient\Details.cshtml" />
+    <None Include="Areas\Chef\Views\Ingredient\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\Ingredient\Index.cshtml" />
+    <None Include="Areas\Chef\Views\Ingredient\RemoveFood.cshtml" />
+    <None Include="Areas\Chef\Views\Offer\Create.cshtml" />
+    <None Include="Areas\Chef\Views\Offer\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\Offer\Details.cshtml" />
+    <None Include="Areas\Chef\Views\Offer\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\Offer\Index.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrder\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrder\Details.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrder\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrder\FeedBack.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrder\Index.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrder\TimePeriod.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrderContent\Create.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrderContent\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrderContent\Details.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrderContent\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\PastOrderContent\Index.cshtml" />
+    <None Include="Areas\Chef\Views\OrderContent\Create.cshtml" />
+    <None Include="Areas\Chef\Views\OrderContent\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\OrderContent\Details.cshtml" />
+    <None Include="Areas\Chef\Views\OrderContent\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\OrderContent\Index.cshtml" />
+    <None Include="Areas\Chef\Views\Order\Delete.cshtml" />
+    <None Include="Areas\Chef\Views\Order\Details.cshtml" />
+    <None Include="Areas\Chef\Views\Order\Edit.cshtml" />
+    <None Include="Areas\Chef\Views\Order\FeedBack.cshtml" />
+    <None Include="Areas\Chef\Views\Order\Index.cshtml" />
+    <None Include="Areas\Chef\Views\Order\TimePeriod.cshtml" />
+    <None Include="Areas\Chef\Views\Sale\DetailsItem.cshtml" />
+    <None Include="Areas\Chef\Views\Sale\DetailsTime.cshtml" />
+    <None Include="Areas\Chef\Views\Sale\DetailsTimeItem.cshtml" />
+    <None Include="Areas\Chef\Views\Sale\Index.cshtml" />
+    <None Include="Areas\Chef\Views\Shared\Offer\_AddEdit.cshtml" />
+    <None Include="Areas\Chef\Views\Home\Index.cshtml" />
+    <None Include="Areas\Critic\Views\Home\Index.cshtml" />
+    <None Include="Areas\Critic\Views\Review\Create.cshtml" />
+    <None Include="Areas\Critic\Views\Review\Delete.cshtml" />
+    <None Include="Areas\Critic\Views\Review\Details.cshtml" />
+    <None Include="Areas\Critic\Views\Review\Edit.cshtml" />
+    <None Include="Areas\Critic\Views\Review\Index.cshtml" />
+    <None Include="Areas\Delivery\Views\Home\Index.cshtml" />
+    <None Include="Areas\Delivery\Views\Order\TimePeriod.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrder\Delete.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrder\Details.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrder\Edit.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrder\FeedBack.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrder\Index.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrder\TakeOrder.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrderContent\Create.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrderContent\Delete.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrderContent\Details.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrderContent\Edit.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrderContent\Index.cshtml" />
+    <None Include="Areas\Delivery\Views\OrderContent\Create.cshtml" />
+    <None Include="Areas\Delivery\Views\OrderContent\Delete.cshtml" />
+    <None Include="Areas\Delivery\Views\OrderContent\Details.cshtml" />
+    <None Include="Areas\Delivery\Views\OrderContent\Edit.cshtml" />
+    <None Include="Areas\Delivery\Views\OrderContent\Index.cshtml" />
+    <None Include="Areas\Delivery\Views\Order\Delete.cshtml" />
+    <None Include="Areas\Delivery\Views\Order\Details.cshtml" />
+    <None Include="Areas\Delivery\Views\Order\Edit.cshtml" />
+    <None Include="Areas\Delivery\Views\Order\FeedBack.cshtml" />
+    <None Include="Areas\Delivery\Views\Order\Index.cshtml" />
+    <None Include="Areas\Delivery\Views\Order\TakeOrder.cshtml" />
+    <None Include="Areas\Delivery\Views\PastOrder\TimePeriod.cshtml" />
+    <None Include="Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml" />
+    <None Include="Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml" />
+    <None Include="Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml" />
+    <None Include="Areas\Identity\Pages\Account\_ViewImports.cshtml" />
+    <None Include="Areas\Manager\Views\Allergen\AddFood.cshtml" />
+    <None Include="Areas\Manager\Views\Allergen\Create.cshtml" />
+    <None Include="Areas\Manager\Views\Allergen\Delete.cshtml" />
+    <None Include="Areas\Manager\Views\Allergen\Details.cshtml" />
+    <None Include="Areas\Manager\Views\Allergen\Edit.cshtml" />
+    <None Include="Areas\Manager\Views\Allergen\Index.cshtml" />
+    <None Include="Areas\Manager\Views\Allergen\RemoveFood.cshtml" />
+    <None Include="Areas\Manager\Views\Ingredient\AddFood.cshtml" />
+    <None Include="Areas\Manager\Views\Ingredient\Create.cshtml" />
+    <None Include="Areas\Manager\Views\Ingredient\Delete.cshtml" />
+    <None Include="Areas\Manager\Views\Ingredient\Details.cshtml" />
+    <None Include="Areas\Manager\Views\Ingredient\Edit.cshtml" />
+    <None Include="Areas\Manager\Views\Ingredient\Index.cshtml" />
+    <None Include="Areas\Manager\Views\Home\Index.cshtml" />
+    <None Include="Areas\Manager\Views\Ingredient\RemoveFood.cshtml" />
+    <None Include="Areas\Manager\Views\OrderContent\Create.cshtml" />
+    <None Include="Areas\Manager\Views\OrderContent\Delete.cshtml" />
+    <None Include="Areas\Manager\Views\OrderContent\Details.cshtml" />
+    <None Include="Areas\Manager\Views\OrderContent\Edit.cshtml" />
+    <None Include="Areas\Manager\Views\OrderContent\Index.cshtml" />
+    <None Include="Areas\Manager\Views\Order\Delete.cshtml" />
+    <None Include="Areas\Manager\Views\Order\Details.cshtml" />
+    <None Include="Areas\Manager\Views\Order\Edit.cshtml" />
+    <None Include="Areas\Manager\Views\Order\FeedBack.cshtml" />
+    <None Include="Areas\Manager\Views\Order\Index.cshtml" />
+    <None Include="Areas\Manager\Views\Order\TimePeriod.cshtml" />
+    <None Include="Areas\Manager\Views\Sale\DetailsTimeItem.cshtml" />
+    <None Include="Areas\Manager\Views\Sale\DetailsItem.cshtml" />
+    <None Include="Areas\Manager\Views\Sale\DetailsTime.cshtml" />
+    <None Include="Areas\Manager\Views\Sale\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Order\TimePeriod.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

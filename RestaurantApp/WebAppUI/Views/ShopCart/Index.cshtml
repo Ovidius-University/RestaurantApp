@@ -1,0 +1,67 @@
+﻿@model IndexShopCartsVm
+
+@{
+    ViewData["Title"] = "Index";
+    decimal cost = 0;
+}
+
+<h1>List of food items currently in your shopping cart:</h1>
+<p>
+    <a asp-action="Create" class="btn btn-sm btn-primary">Add a food item to your shopping cart</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Unit Price
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Total price
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListShopCarts!)
+        {
+         cost += item.TotalPrice;
+         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Food!.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice) RON
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice) RON
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FoodId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FoodId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FoodId">Remove</a>
+            </td>
+        </tr>
+        }
+        <h1>Total cost of shopping cart is: @cost RON</h1>
+        <p>
+            <a asp-action="Order" asp-route-id="@Model.CustomerId" class="btn btn-sm btn-outline-success">Send your order</a>
+        </p>
+        <br />
+    </tbody>
+</table>
+@await Html.PartialAsync("_MessageResponse", "MessageShopCart")
+<br />
+<h1>Random Suggestion</h1>
+<article class="col-4 mb-3">
+    @await Html.PartialAsync("Food/_Card", @Model.Suggestion)
+</article>
+<br />

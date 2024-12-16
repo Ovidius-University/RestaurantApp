@@ -1,0 +1,39 @@
+﻿@model ProviderFoodsVm
+<section class="row">
+    <article class="me-2">
+        <h1>@Html.DisplayFor(m => Model.ProviderDetails!.Name)</h1><hr /><br />
+    </article>
+    <h2>Food items</h2>
+    @if (Model.Foods!.Count() > 0)
+    {
+        @foreach (var item in Model.Foods!)
+        {
+            <article class="me-2 col-lg-3">
+                @await Html.PartialAsync("Food/_Card", item)
+            </article>
+        }
+    }
+    else
+    {
+        <article class="alert alert-warning" role="alert">There is no food made by this provider!</article>
+    }
+    <br /><hr /><br />
+    <h2>Ingredients</h2>
+    @if (Model.Ingredients!.Count() > 0)
+    {
+        @foreach (var item in Model.Ingredients!)
+        {
+            <article class="me-2 col-lg-3">
+                @await Html.PartialAsync("Ingredient/_Card", item)
+            </article>
+        }
+    }
+    else
+    {
+        <article class="alert alert-warning" role="alert">There is no ingredient made by this provider!</article>
+    }
+</section>
+<br />
+<div>
+    <partial name="_BackToList" />
+</div>

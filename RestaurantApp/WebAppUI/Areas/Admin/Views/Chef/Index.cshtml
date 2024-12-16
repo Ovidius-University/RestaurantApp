@@ -1,0 +1,46 @@
+﻿@model IndexChefVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of the chefs</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Chef id
+            </th>
+            <th>
+                Chef name
+            </th>
+            <th>
+                Number of food items
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListChefs!)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChefId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foods)
+            </td>
+            @if(item.Foods > 0)
+            {
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ChefId">Food items</a>
+                </td>
+            }
+        </tr>
+        }<br />
+    </tbody>
+</table>
+@await Html.PartialAsync("_MessageResponse", "MessageChef")

@@ -1,0 +1,147 @@
+﻿@model IndexEmpWorkVm
+
+@{
+    ViewData["Title"] = "OrdersEmp";
+}
+
+<div>
+    <h1>List of the <strong>@Html.DisplayFor(model => model.Orders)</strong> orders taken by the employee <strong>@Html.DisplayFor(model => model.Email)</strong></h1>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Order Number
+                </th>
+                <th>
+                    Customer Name
+                </th>
+                <th>
+                    Cost (without tip)
+                </th>
+                <th>
+                    Is it a Delivery?
+                </th>
+                <th>
+                    Worker Name
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    Tip
+                </th>
+                <th>
+                    Paying Method
+                </th>
+                <th>
+                    Order Time
+                </th>
+                <th>
+                    Picked Arrival Time
+                </th>
+                <th>
+                    Is it finished?
+                </th>
+                <th>
+                    Delivery Time
+                </th>
+                <th>
+                    Feedback
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ListOrders!)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cost) RON
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsDelivery)
+                    </td>
+                    @if (item.DeliveryName != string.Empty && item.DeliveryName != null)
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryName)
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            No worker yet
+                        </td>
+                    }
+                    @if (item.Address != string.Empty && item.Address != null)
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                    }
+                    else if (item.IsDelivery == false)
+                    {
+                        <td>
+                            Not a delivery
+                        </td>
+                    }
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tip) RON
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PayingMethod)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OrderTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArrivalTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsFinal)
+                    </td>
+                    @if (item.IsFinal == true)
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryTime)
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            The order hasn't been delivered or picked up yet
+                        </td>
+                    }
+                    @if (item.IsFinal == false)
+                    {
+                        <td>
+                            Order isn't finished, so feedback couldn't be sent
+                        </td>
+                    }
+                    else if (item.Comment != null && item.Comment != string.Empty)
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Comment)
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            The customer didn't send any feedback
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    <partial name="_BackToList" />
+</div>

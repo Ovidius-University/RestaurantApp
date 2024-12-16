@@ -1,0 +1,48 @@
+﻿@model IndexEmployeeSchedulesVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index of employee schedules for @Html.DisplayFor(model => model.Day)</h1>
+@await Html.PartialAsync("_MessageResponse", "MessageEmployeeSchedule")
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Employee
+            </th>
+            <th>
+                Start Hour
+            </th>
+            <th>
+                End Hour
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.ListEmployeeSchedules!) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartHour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndHour)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-did="@item.DayId" asp-route-eid="@item.EmployeeId" >Edit</a> |
+                <a asp-action="Details" asp-route-did="@item.DayId" asp-route-eid="@item.EmployeeId" >Details</a> |
+                <a asp-action="Delete" asp-route-did="@item.DayId" asp-route-eid="@item.EmployeeId" >Remove</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<div>
+    <a asp-action="WeekDays">Back to list</a>
+</div>

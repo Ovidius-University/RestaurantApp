@@ -1,0 +1,25 @@
+﻿@model IndexFoodReviewsVm
+<section class="row">
+    <article class="me-2">
+        <h1>Reviews for <strong>@Html.DisplayFor(model => model.Food)</strong></h1>
+    </article>
+    <section class="row">
+        @if (Model.ListReviews!.Count() > 0)
+        {
+            @foreach (var item in Model.ListReviews!)
+            {
+                <article class="col-4 mb-3">
+                    @await Html.PartialAsync("Review/_Card", item)
+                </article>
+            }
+        }
+        else
+        {
+            <article class="alert alert-warning" role="alert">There is no written review!</article>
+        }
+    </section>
+</section>
+<br />
+<div>
+    <a asp-action="Items">Back to list</a>
+</div>

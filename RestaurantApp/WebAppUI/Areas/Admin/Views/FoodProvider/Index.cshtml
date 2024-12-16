@@ -1,0 +1,52 @@
+﻿@model IndexFoodVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of the providers</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Provider id
+            </th>
+            <th>
+                Provider name
+            </th>
+            <th>
+                Number of ingredients
+            </th>
+            <th>
+                Number of food items
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListFoodProviders!)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProviderId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredients)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foods)
+            </td>
+            @if(item.Ingredients + item.Foods > 0)
+            {
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ProviderId">Foods and ingredients</a>
+                </td>
+            }
+        </tr>
+        }<br />
+    </tbody>
+</table>
+@await Html.PartialAsync("_MessageResponse", "MessageFoodProvider")

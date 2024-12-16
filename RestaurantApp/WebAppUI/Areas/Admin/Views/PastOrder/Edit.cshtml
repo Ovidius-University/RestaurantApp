@@ -1,0 +1,71 @@
+﻿@model ExistentOrderDto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@if (Model.IsFinal == true)
+{
+    <h1>Are you sure you want to confirm the order?</h1>
+}
+else
+{
+    <h1>Are you sure you want to unconfirm the order?</h1>
+}
+
+<h1>Order number: @Html.DisplayFor(m => Model.Id)</h1>
+<h2>Customer email: @Html.DisplayFor(m => Model.Email)</h2>
+<h2>Customer name: @Html.DisplayFor(m => Model.Name)</h2>
+@if(Model.IsDelivery){
+    <h3>Address: @Html.DisplayFor(m => Model.Address)</h3>
+}
+<h3>Tip: @Html.DisplayFor(m => Model.Tip) RON</h3>
+<h4>Paying Method: @Html.DisplayFor(m => Model.PayingMethod)</h4>
+<h5>Arrival Time: @Html.DisplayFor(m => Model.ArrivalTime)</h5>
+<h5>Delivery Time: @Html.DisplayFor(m => Model.DeliveryTime)</h5>
+<hr />
+@await Html.PartialAsync("_MessageResponse", "MessagePastOrderEdit")
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="Name" />
+            <input type="hidden" asp-for="IsDelivery" />
+            <input type="hidden" asp-for="WorkerId" />
+            @if (Model.IsDelivery)
+            {
+                <input type="hidden" asp-for="Address" />
+            }
+            <input type="hidden" asp-for="Tip" />
+            <input type="hidden" asp-for="ArrivalTime" />
+            <input type="hidden" asp-for="PayingMethodId" />
+            <input type="hidden" asp-for="PayingMethod" />
+            <input type="hidden" asp-for="IsFinal" />
+            <div class="row">
+                @if (Model.IsFinal == true)
+                {
+                    <div class="form-group">
+                        <input type="submit" value="Confirm" class="btn btn-primary" />
+                    </div>
+                }
+                else
+                {
+                    <div class="form-group">
+                        <input type="submit" value="Unconfirm" class="btn btn-primary" />
+                    </div>
+                }
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <partial name="_BackToList" />
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

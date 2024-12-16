@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ExistentSpecialDayDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Special days for the restaurant</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-sm btn-outline-success">Add a special day</a>
+</p>
+
+<div class="col-md-6">
+    @if (Model.Count() > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.StartHour)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EndHour)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsWorkDay)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Day)/@Html.DisplayFor(modelItem => item.Month)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StartHour)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EndHour)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IsWorkDay)
+                        </td>
+                        <td>
+                            @*<a asp-action="Orders" asp-route-id="@item.Id">Orders</a> |*@
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p class="text-danger">There is no registered special day!</p>
+    }
+    @await Html.PartialAsync("_MessageResponse","MessageSpecialDay")
+</div>

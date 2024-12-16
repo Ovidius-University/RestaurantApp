@@ -1,0 +1,12 @@
+﻿@model string
+<!--Alert starts here-->
+@if (TempData.Peek(Model) is not null)
+{
+    <section>
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            @Html.Raw(TempData[Model])
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </section>
+}
+<!--Alert ends here-->

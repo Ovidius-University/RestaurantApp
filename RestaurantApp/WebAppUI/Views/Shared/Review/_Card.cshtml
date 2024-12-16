@@ -1,0 +1,11 @@
+﻿﻿﻿﻿@using WebAppUI.Models.ViewModels
+@model CardReviewVm
+<div class="card h-100">
+    <div class="card-body">
+        <h2 class="card-subtitle mb-2 text-body-secondary">@Html.DisplayFor(m => Model.Reviewer)</h2>
+        <hr />
+        <h3 class="card-text">@Html.DisplayFor(m => Model.Food)</h3>
+        <h4 class="card-subtitle mb-2 text-body-secondary">@Html.DisplayFor(m => Model.Content)</h4>
+        <a asp-controller="Review" asp-action="Details" asp-route-fid="@Model.FoodId" asp-route-rid="@Model.ReviewerId" class="card-link">Details</a>
+    </div>
+</div>

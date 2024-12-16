@@ -1,0 +1,35 @@
+﻿@model UserDataVm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1><strong>Entered user data</strong></h1>
+
+<div>
+    <h2><strong>User: </strong> @Html.DisplayFor(model => model.User)</h2>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Birthday)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Birthday)
+        </dd>
+    </dl>
+</div>
+<div>
+    <partial name="_BackToList" />
+</div>

@@ -1,0 +1,51 @@
+﻿@model IndexWorkVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of the orders taken by the employees</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Worker id
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Number of orders
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListWorks!)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Orders)
+            </td>
+            <td>
+                <a asp-action="OrdersEmp" asp-route-id="@item.WorkerId">Orders info</a>
+            </td>
+        </tr>
+        }
+        <br/>
+        <a asp-action="OrdersTime" asp-route-id=1 class="btn btn-sm btn-primary">Last day</a>
+         | 
+        <a asp-action="OrdersTime" asp-route-id=2 class="btn btn-sm btn-primary">Last month</a>
+         | 
+        <a asp-action="OrdersTime" asp-route-id=3 class="btn btn-sm btn-primary">Last year</a>
+        <br />
+        <br />
+    </tbody>
+</table>
+@await Html.PartialAsync("_MessageResponse", "MessageEmpWork")

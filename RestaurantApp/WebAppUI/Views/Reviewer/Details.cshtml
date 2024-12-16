@@ -1,0 +1,24 @@
+﻿@model ReviewerReviewsVm
+<section class="row">
+    <article class="me-2">
+        <h1>@Html.DisplayFor(m => Model.ReviewerDetails!.Name)</h1>
+    </article>
+    @if (Model.Reviews!.Count() > 0)
+    {
+        @foreach (var item in Model.Reviews!)
+        {
+            <article class="me-2 col-lg-3">
+                @await Html.PartialAsync("Review/_Card", item)
+            </article>
+        }
+    }
+    else
+    {
+        <article class="alert alert-warning" role="alert">There is no review made by this reviewer yet!</article>
+    }
+</section>
+<br />
+<br />
+<div>
+    <partial name="_BackToList" />
+</div>

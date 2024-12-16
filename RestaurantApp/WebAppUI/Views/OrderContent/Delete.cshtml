@@ -1,0 +1,37 @@
+﻿@model OrderContentDetailsVm
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Remove a food item from the order</h1>
+
+<h3>Are you sure you want to remove this item from the order?</h3>
+<div>
+    <h4>
+        <strong>Food item: </strong> @Html.DisplayFor(model => model.Food)
+    </h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UnitPrice)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete" asp-route-oid="@Model.OrderId">
+        <input type="hidden" asp-for="CustomerId" />
+        <input type="hidden" asp-for="OrderId" />
+        <input type="hidden" asp-for="FoodId" />
+        <input type="submit" value="Remove" class="btn btn-danger" /> |
+        <a asp-action="Index" asp-route-oid="@Model.OrderId">Back to list</a>
+    </form>
+</div>

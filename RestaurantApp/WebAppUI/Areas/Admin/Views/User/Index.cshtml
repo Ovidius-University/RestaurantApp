@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ExistentUserDto>
+<div class="col-md-6">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.IsAdmin)
+                </th>
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.IsManager)
+                </th>
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.IsCritic)
+                </th>
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.IsChef)
+                </th>
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.IsDelivery)
+                </th>
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.IsCashier)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.IsAdmin)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.IsManager)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.IsCritic)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.IsChef)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.IsDelivery)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.IsCashier)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @await Html.PartialAsync("_MessageResponse", "MessageUser")
+
+</div>

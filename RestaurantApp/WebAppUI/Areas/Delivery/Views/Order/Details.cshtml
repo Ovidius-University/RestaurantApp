@@ -1,0 +1,74 @@
+﻿@model OrderDetailsVm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h1><strong>Order number: </strong> @Html.DisplayFor(model => model.Id)</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cost) RON
+        </dd>
+        @*
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsDelivery)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsDelivery)
+        </dd>
+        <dt class="col-sm-2">
+            Worker Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeliveryName)
+        </dd>
+        *@
+        @if (Model.Address != string.Empty && Model.Address != null)
+        {
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Address)
+        </dd>
+        }
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tip)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tip) RON
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PayingMethod)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PayingMethod)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArrivalTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArrivalTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <partial name="_BackToList" />
+</div>

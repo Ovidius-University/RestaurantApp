@@ -1,0 +1,195 @@
+﻿@model AddEditFoodOfferDto
+<div class="modal fade" id="modalOffer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Title of Food item</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-controller="Food" asp-action="AddOffer">
+                <div class="modal-body">
+                    <div class="modal-details">
+                        <h4 class="ingredients">
+                            <strong>Ingredients:</strong> List of ingredients
+                        </h4>
+                        <hr />
+                        <dl class="row">
+                            <dt class="col-sm-2">
+                                Title
+                            </dt>
+                            <dd class="col-sm-10 title">
+                                Food item title
+                            </dd>
+                            <dt class="col-sm-2">
+                                Price
+                            </dt>
+                            <dd class="col-sm-10 price">
+                                Food item price
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="form-group mb-3 text-danger updateErrors">
+                        <ul>
+                        </ul>
+                    </div>
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="Price" />
+                    <div class="form-group col-md-6 mb-3">
+                        <label asp-for="NewPrice" class="control-label"></label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" asp-for="NewPrice">
+                            <span class="input-group-text"></span>
+                        </div>
+                        <span asp-validation-for="NewPrice" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label asp-for="PromoText" class="control-label"></label>
+                        <input asp-for="PromoText" class="form-control" />
+                        <span asp-validation-for="PromoText" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="deleteOffer" class="btn btn-sm btn-danger">Delete</button>
+                    <button type="button" class="btn btn-sm btn-outline-warning"
+                        data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" id="updateOffer" class="btn btn-success">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    const modalOffer = document.getElementById('modalOffer');
+    function SetupUpdateOffer(id, token) {
+        $("#updateOffer").on("click", function () {
+            const FoodId = $('input[name="Id"]').val();
+            const Price = $('input[name="Price"]').val();
+            const NewPrice = $('input[name="NewPrice"]').val();
+            const PromoText = $('input[name="PromoText"]').val();
+            //const Address = tinymce.get('Address').getContent();
+            //const IsSelected = $('input[name="IsSelected"]').is(":checked");
+            $.ajax({
+                url: `/Chef/Offer/UpdateOffer/${id}`,
+                type: 'POST',
+                headers: { "RequestVerificationToken": token },
+                data: {
+                    Id: FoodId,
+                    Price: Price,
+                    NewPrice: NewPrice,
+                    PromoText: PromoText
+                },
+                success: function (result) {
+                    // Handle success - for instance, remove the record from the view or notify the user
+                    if (result.success) {
+                        location.reload();
+                    } else {
+                        var errorList = $('.updateErrors ul');//$('#errorList');
+                        errorList.empty();
+                        $.each(result.errors, function (index, error) {
+                            errorList.append(`<li>${error}</li>`);
+                        });
+                        if (result.priceError) {
+                            console.log("priceError=", result.item);
+                            modalOffer.querySelector('.modal-details .price').innerHTML = `${result.item.price}`;
+                            $('input[name="Price"]').val(result.item.price);
+                        }
+                        //$('#errorModal').modal('show');
+                    }
+                },
+                error: function (error) {
+                    // Handle error - notify the user about the error
+                }
+            });
+        });
+    }
+
+    function SetupDeleteOffer(id, token) {
+        $("#deleteOffer").on("click", function () {
+            const FoodId = $('input[name="Id"]').val();
+            $.ajax({
+                url: `/Chef/Offer/DeleteOffer/${id}`,
+                type: 'DELETE',
+                headers: { "RequestVerificationToken": token },
+                data: {
+                    FoodId: FoodId
+                },
+                success: function (result) {
+                    // Handle success - for instance, remove the record from the view or notify the user
+                    if (result.success) {
+                        location.reload();
+                    } else {
+                        var errorList = $('.updateErrors ul');//$('#errorList');
+                        errorList.empty();
+                        $.each(result.errors, function (index, error) {
+                            errorList.append('<li>' + error + '</li>');
+                        });
+                        //$('#errorModal').modal('show');
+                    }
+                },
+                error: function (error) {
+                    // Handle error - notify the user about the error
+                }
+            });
+        });
+    }
+    if (modalOffer) {
+        modalOffer.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget;
+            const id = button.getAttribute('data-bs-id');
+            const token = $('input[name="__RequestVerificationToken"]').val();
+            let IsNew = false;
+            $.ajax({
+                url: `/Chef/Offer/GetOffer/${id}`,
+                type: 'GET',
+                headers: { "RequestVerificationToken": token },
+                data: {
+
+                },
+                success: function (result) {
+                    // Handle success - for instance, remove the record from the view or notify the user
+                    //$(modalUpdate).modal('hide');
+                    //location.reload();
+                    if (result.success) {
+                        //$(modalUpdate).modal('hide');
+                        console.log(result);
+                        //modalOffer.querySelector('.modal-title').innerHTML = result.item.title;
+                        modalOffer.querySelector('.modal-details .ingredients').innerHTML = `<strong>Ingredients<strong>: ${result.item.ingredients}`;
+                        modalOffer.querySelector('.modal-details .title').innerHTML = result.item.title;
+                        modalOffer.querySelector('.modal-details .price').innerHTML = `${result.item.price}`;
+                        $('input[name="Id"]').val(result.item.id);
+                        $('input[name="Price"]').val(result.item.price);
+                        $('input[name="NewPrice"]').val(result.item.NewPrice);
+                        $('input[name="PromoText"]').val(result.item.PromoText);
+                        IsNew = result.item.isNewOffer;
+                        //tinymce.get('Address').setContent(result.item.address);
+                        //$("#IsSelected").prop('checked', result.item.isSelected);
+                        //$("#IsSelected").prop('disabled', result.item.isSelected);
+                        if (IsNew) {
+                            modalOffer.querySelector('.modal-title').innerHTML = "Add Offer";
+                            $("#deleteOffer").hide();
+                            $("#updateOffer").text("Save");
+                            // Setup Add Offer
+                            SetupUpdateOffer(id,token);
+                        } else {
+                            modalOffer.querySelector('.modal-title').innerHTML = 'Modify Offer';
+                            $("#deleteOffer").show();
+                            $("#updateOffer").text("Modify");
+                            // Setup Update and Delete Offer
+                            SetupUpdateOffer(id,token);
+                            SetupDeleteOffer(id,token);
+                        }
+                    }
+                },
+                error: function (error) {
+                    // Handle error - notify the user about the error
+                    // console.log("Eroare de alta natura");
+                }
+            });
+        })
+    }
+</script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

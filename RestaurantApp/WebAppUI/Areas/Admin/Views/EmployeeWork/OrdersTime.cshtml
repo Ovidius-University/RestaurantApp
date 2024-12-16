@@ -1,0 +1,58 @@
+﻿@model WorkTimeVm
+
+@{
+    ViewData["Title"] = "OrdersTime";
+}
+
+@if (Model.id == 1)
+{
+    <h1>List of the orders taken by the employees in the last day</h1>
+}
+else if (Model.id == 2)
+{
+    <h1>List of the orders taken by the employees in the last month</h1>
+}
+else if (Model.id == 3)
+{
+    <h1>List of the orders taken by the employees in the last year</h1>
+}
+
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Worker id
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Number of orders
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListWorks!)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Orders)
+            </td>
+            <td>
+                <a asp-action="OrdersTimeEmp" asp-route-id="@item.WorkerId" asp-route-tid="@Model.id">Orders info</a>
+            </td>
+        </tr>
+        }<br />
+    </tbody>
+</table>
+<div>
+    <partial name="_BackToList" />
+</div>

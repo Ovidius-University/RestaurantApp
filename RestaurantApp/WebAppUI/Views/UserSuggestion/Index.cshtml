@@ -1,0 +1,58 @@
+﻿@model IndexUserSuggestionVm
+    <article class="me-2">
+        <h1>Suggested food items (what other people, similar to you, have purchased in addition)</h1>
+    </article>
+    <br />
+    @if(Model.UserData == null)
+    {<p>
+        <a asp-action="Create" class="btn btn-sm btn-primary">Enter your data to get suggestions based on similarities between users</a>
+    </p>}
+    else{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    Birthday
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => Model.UserData!.Gender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => Model.UserData!.Birthday)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@Model.UserData!.UserId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@Model.UserData!.UserId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@Model.UserData!.UserId">Delete</a>
+                    </td>
+                </tr>
+    </table>
+    }
+    <section class="row">
+    @if (Model.ListFoods != null && Model.ListFoods.Count() > 0)
+        {
+        @foreach (var item in Model.ListFoods!)
+            {
+                <article class="col-4 mb-3">
+                    @await Html.PartialAsync("Food/_Card", item)
+                </article>
+            }
+        }
+        else if(Model.UserData != null)
+        {
+            <article class="alert alert-warning" role="alert">There is no available suggestion, as you purchased everything we can recommend based on similarities between you and other customers!</article>
+        }
+    else if (Model.UserData == null)
+    {
+        <article class="alert alert-warning" role="alert">In order to get suggestions, you will need to enter some information for us to match it to other people!</article>
+    }
+    </section>
+@await Html.PartialAsync("_MessageResponse", "MessageUserSuggestion")

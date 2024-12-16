@@ -1,0 +1,823 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebAppUI
+build_property.RootNamespace = WebAppUI
+build_property.ProjectDir = C:\Users\HP\OneDrive - Universitatea „OVIDIUS”\Desktop\Licenta\RestaurantApp\WebAppUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\HP\OneDrive - Universitatea „OVIDIUS”\Desktop\Licenta\RestaurantApp\WebAppUI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/EmployeeSchedule/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRW1wbG95ZWVTY2hlZHVsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/EmployeeSchedule/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRW1wbG95ZWVTY2hlZHVsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/EmployeeSchedule/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRW1wbG95ZWVTY2hlZHVsZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/EmployeeSchedule/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRW1wbG95ZWVTY2hlZHVsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/EmployeeSchedule/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRW1wbG95ZWVTY2hlZHVsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Gender/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Gender/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Gender/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Gender/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Gender/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Information/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW5mb3JtYXRpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Information/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW5mb3JtYXRpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Information/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW5mb3JtYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/OrderContent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJDb250ZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/OrderContent/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJDb250ZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/OrderContent/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJDb250ZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/OrderContent/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJDb250ZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/OrderContent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJDb250ZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Order/FeedBack.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRmVlZEJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/PayingMethod/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5aW5nTWV0aG9kXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/PayingMethod/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5aW5nTWV0aG9kXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/PayingMethod/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5aW5nTWV0aG9kXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/PayingMethod/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5aW5nTWV0aG9kXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/PayingMethod/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5aW5nTWV0aG9kXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Privacy/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpdmFjeVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Privacy/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpdmFjeVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Privacy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpdmFjeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Provider/AddManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvdmlkZXJcQWRkTWFuYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Provider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvdmlkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Provider/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvdmlkZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Provider/DeleteManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvdmlkZXJcRGVsZXRlTWFuYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Provider/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvdmlkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Provider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvdmlkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Provider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvdmlkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Provider/Managers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvdmlkZXJcTWFuYWdlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Reviewer/AddCritic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJcQWRkQ3JpdGljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Reviewer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Reviewer/Critics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJcQ3JpdGljcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Reviewer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Reviewer/DeleteCritic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJcRGVsZXRlQ3JpdGljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Reviewer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Reviewer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/Reviewer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/SpecialDay/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lhbERheVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/SpecialDay/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lhbERheVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/SpecialDay/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lhbERheVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/SpecialDay/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lhbERheVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/SpecialDay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lhbERheVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/WorkHour/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcV29ya0hvdXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/WorkHour/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcV29ya0hvdXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/WorkHour/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcV29ya0hvdXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Food/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xGb29kXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Food/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xGb29kXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Food/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xGb29kXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xPcmRlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xPcmRlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xPcmRlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Order/FeedBack.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xPcmRlclxGZWVkQmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xPcmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/PastOrderContent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xQYXN0T3JkZXJDb250ZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/PastOrderContent/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xQYXN0T3JkZXJDb250ZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/PastOrderContent/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xQYXN0T3JkZXJDb250ZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/PastOrderContent/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xQYXN0T3JkZXJDb250ZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/PastOrderContent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xQYXN0T3JkZXJDb250ZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Cashier/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FzaGllclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Chef/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2hlZlxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Chef/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2hlZlxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Critic/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3JpdGljXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Critic/Views/Review/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3JpdGljXFZpZXdzXFJldmlld1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Critic/Views/Review/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3JpdGljXFZpZXdzXFJldmlld1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Critic/Views/Review/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3JpdGljXFZpZXdzXFJldmlld1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Critic/Views/Review/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3JpdGljXFZpZXdzXFJldmlld1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Critic/Views/Review/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3JpdGljXFZpZXdzXFJldmlld1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Critic/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3JpdGljXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Critic/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3JpdGljXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/OrderContent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJDb250ZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/OrderContent/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJDb250ZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/OrderContent/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJDb250ZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/OrderContent/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJDb250ZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/OrderContent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJDb250ZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/Order/FeedBack.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJcRmVlZEJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/Order/TakeOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcT3JkZXJcVGFrZU9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Delivery/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDYXRlZ29yeVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Category/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDYXRlZ29yeVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Category/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDYXRlZ29yeVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDYXRlZ29yeVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDYXRlZ29yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Food/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xGb29kXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Food/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xGb29kXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Food/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xGb29kXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Food/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xGb29kXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Food/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xGb29kXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Food/Offer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xGb29kXE9mZmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Ingredient/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xJbmdyZWRpZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Ingredient/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xJbmdyZWRpZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Ingredient/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xJbmdyZWRpZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Ingredient/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xJbmdyZWRpZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Ingredient/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xJbmdyZWRpZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Offer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xPZmZlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Offer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xPZmZlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Offer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xPZmZlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Offer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xPZmZlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Offer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xPZmZlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/Shared/Offer/_AddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xTaGFyZWRcT2ZmZXJcX0FkZEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Areas/Manager/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Category/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Chef/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Chef/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Food/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Food/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Food/Offers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxPZmZlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Ingredient/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Ingredient/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/NewSuggestion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3U3VnZ2VzdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/OrderContent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDb250ZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/OrderContent/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDb250ZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/OrderContent/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDb250ZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/OrderContent/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDb250ZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/OrderContent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDb250ZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Order/FeedBack.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRmVlZEJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Order/TimePeriod.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcVGltZVBlcmlvZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Provider/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmlkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Provider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmlkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Reviewer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3ZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Reviewer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Review/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Review/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Review/Items.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEl0ZW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Category/_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENhdGVnb3J5XF9DYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Chef/_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENoZWZcX0NhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Food/_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb2RcX0NhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Food/_ReviewCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb2RcX1Jldmlld0NhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Ingredient/_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluZ3JlZGllbnRcX0NhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Order/_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE9yZGVyXF9DYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Provider/_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb3ZpZGVyXF9DYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Reviewer/_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJldmlld2VyXF9DYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/Review/_Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJldmlld1xfQ2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_BackToList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYWNrVG9MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_MessageResponse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZXNzYWdlUmVzcG9uc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_PartialLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_PartialMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/ShopCart/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcENhcnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/ShopCart/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcENhcnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/ShopCart/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcENhcnRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/ShopCart/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcENhcnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/ShopCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcENhcnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/ShopCart/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcENhcnRcT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Suggestion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZ2VzdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/UserSuggestion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclN1Z2dlc3Rpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/UserSuggestion/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclN1Z2dlc3Rpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/UserSuggestion/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclN1Z2dlc3Rpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/UserSuggestion/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclN1Z2dlc3Rpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/UserSuggestion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclN1Z2dlc3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-h42rnrb965
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-2uty3b2wut
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_LayoutCashier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDYXNoaWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-oh43855mre
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_LayoutChef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDaGVmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-m1pgwnm5y2
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_LayoutCritic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDcml0aWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-mp5te8uk6j
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_LayoutDelivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREZWxpdmVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-1qt0hddzt3
+
+[C:/Users/HP/OneDrive - Universitatea „OVIDIUS”/Desktop/Licenta/RestaurantApp/WebAppUI/Views/Shared/_LayoutManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYW5hZ2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-hw7qc8zf1l

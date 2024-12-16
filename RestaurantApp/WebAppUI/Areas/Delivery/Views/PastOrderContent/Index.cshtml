@@ -1,0 +1,63 @@
+﻿@model IndexOrderContentsVm
+
+@{
+    ViewData["Title"] = "Index";
+    decimal cost = 0;
+}
+
+<h1>List of food items included in the order</h1>
+@*
+<p>
+    <a asp-action="Create" asp-route-oid="@Model.OrderId" class="btn btn-sm btn-primary">Add a food item to the order</a>
+</p>
+*@
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Unit Price
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Total price
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListOrderContents!)
+        {
+         cost += item.TotalPrice;
+         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Food!.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice) RON
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice) RON
+            </td>
+            <td>
+                @*<a asp-action="Edit" asp-route-oid="@item.OrderId" asp-route-id="@item.FoodId">Edit</a> |*@
+                <a asp-action="Details" asp-route-oid="@item.OrderId" asp-route-id="@item.FoodId">Details</a>
+                @* |<a asp-action="Delete" asp-route-oid="@item.OrderId" asp-route-id="@item.FoodId">Remove</a>*@
+            </td>
+        </tr>
+        }
+        <h2>Total cost of items is: @cost RON</h2>
+    </tbody>
+</table>
+<div>
+    <a asp-action="Index" asp-controller="PastOrder">Back to orders</a>
+<div />
+@await Html.PartialAsync("_MessageResponse", "MessageOrderContent")

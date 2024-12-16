@@ -1,0 +1,2 @@
+In folder avem aplicatia facuta in IDE-ul Microsoft Visual Studio 2022.
+In arhiva .tar avem container-ul Docker cu baza de date folosita de aplicatie.

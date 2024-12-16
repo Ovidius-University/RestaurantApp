@@ -1,0 +1,49 @@
+﻿@using WebAppUI.Areas.Admin.Models.ViewModels
+@using WebAppUI.Models.Entities
+@model ReviewerCriticsVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of critics associated with reviewer <strong>@Model.Name</strong></h1>
+
+<p>
+    <a asp-action="AddCritic" asp-route-id="@Model.Id" class="btn btn-sm btn-outline-success">Add a critic</a>
+</p>
+<div class="col-md-6">
+    @if (Model.ListCritics!.Count() > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Critics
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ListCritics!)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            <a asp-action="DeleteCritic" asp-route-id="@item.Id" asp-route-pub="@Model.Id" asp-route-email="@item.Email">Remove</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p class="text-danger">There is no registered critic!</p>
+    }
+    <div>
+        <partial name="_BackToList" />
+    </div>
+    @await Html.PartialAsync("_MessageResponse","MessageReviewerCritic")
+</div>

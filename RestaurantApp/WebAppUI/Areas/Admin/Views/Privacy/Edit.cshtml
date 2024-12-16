@@ -1,0 +1,32 @@
+﻿@model ExistentPrivacyDto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Change Privacy Policy</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4 mb-3">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Policy" class="control-label"></label>
+                <input asp-for="Policy" class="form-control" />
+                <span asp-validation-for="Policy" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Modify" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <partial name="_BackToList" />
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
